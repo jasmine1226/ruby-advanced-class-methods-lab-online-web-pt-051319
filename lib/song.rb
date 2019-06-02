@@ -35,7 +35,7 @@ class Song
       end
     end
   #match == {} ? false : match
-  false
+  nil
   end
 
   def self.find_or_create_by_name(name) #fix this
@@ -48,5 +48,7 @@ class Song
     end
     song
   end
+
+  def self.
 
 end
