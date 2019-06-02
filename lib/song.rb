@@ -39,11 +39,9 @@ class Song
   end
 
   def self.find_or_create_by_name(name) #fix this
-    song = {}
-    if self.find_by_name(name) == false
+    song = self.find_by_name(name)
+    if song == false
       song = self.create_by_name(name)
-    else
-      song = self.find_by_name(name)
     end
     song
   end
