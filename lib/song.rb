@@ -40,7 +40,7 @@ class Song
 
   def self.find_or_create_by_name(name) #fix this
     song = self.find_by_name(name)
-    puts Song
+    puts song
     if song == false
       song = self.create_by_name(name)
     end
