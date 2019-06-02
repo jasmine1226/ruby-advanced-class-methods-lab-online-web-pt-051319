@@ -41,8 +41,11 @@ class Song
   def self.find_or_create_by_name(name) #fix this
     song = Song.find_by_name(name)
     puts song
+    puts song.name
     if song == false
       song = Song.create_by_name(name)
+      puts song
+      puts song.name
     end
     song
   end
