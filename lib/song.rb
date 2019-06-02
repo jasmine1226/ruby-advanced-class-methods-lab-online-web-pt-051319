@@ -29,10 +29,9 @@ class Song
   end
 
   def self.find_by_name(name)
-  match = {}
     @@all.collect do |song|
       if song.name == name
-        return match = song
+        return song
       end
     end
   #match == {} ? false : match
