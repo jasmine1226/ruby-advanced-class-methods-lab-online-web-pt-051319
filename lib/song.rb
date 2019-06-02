@@ -51,7 +51,7 @@ class Song
 
   def self.new_from_filename(filename)
     song_data = filename.split(/ - |./)
-    puts filename 
+    puts filename
     puts song_data
 
   end
